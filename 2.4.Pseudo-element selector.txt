@@ -1,0 +1,77 @@
+<html>
+<head><title>Pseudu-element class selector</title>
+<link rel="stylesheet" href="h1.css">
+<style>
+h2{
+ color:blue;
+}
+#one::first-line {
+	color: green;
+	background-color:cyan;
+} 
+#two::first-letter {
+	color: green;
+	font-size:20px;
+	font-family: "Lucida Console";
+}
+#three::selection {
+	color: red;
+	background-color:yellow;
+} 
+</style>
+</head>
+<body>
+	<h1><center><u>Pseudu-element class selector </u>(::)</center></h1>
+	<p>A CSS pseudo-element is a keyword added to a selector that lets you style a specific part
+	 of the selected element(s).it was represented by  (::) <br>
+	 For example, <br>
+	<li>::first-line can be used to change the font of thefirst line of a paragraph.</li>
+	<li>Insert content before, or after, the content of an element</li></p>
+
+	<h2><u>The ::first-line Pseudo-element</u></h2>
+	<p>The ::first-line pseudo-element is used to add a special style to the first line of a text in a paragraph.
+	The syntax to change the style of the first line of the paragrah is </p> 
+	selector::first-line { <br>
+		property:value;<br>
+		}<br>
+	<h3><u>Example:-</u></h3>
+	<p>
+	<p id=one>This is the first line of the paragraph, this line color will change into green while remaining lines 
+	are as same<br>
+	This is a paragraph with some text. A bit more text even.This is a paragraph with some text. A bit more text even.
+	This is a paragraph with some text. A bit more text even.This is a paragraph with some text. A bit more text even.</p>.</p>
+	</p><hr><hr>		
+
+	
+	<h2><u>The ::first-letter Pseudo-element</u></h2>
+	<p>The ::first-line pseudo-element is used to add a special style to the first letter of the paragraph.
+	The syntax to change the style of the first letter of the paragrah is </p> 
+	selector::first-letter { <br>
+		property:value;<br>
+		}<br>
+	<h3><u>Example:-</u></h3>
+	<p>
+	<p id=two>In this only the style of the <u>first letter</u> is changed while the remaining parahraph is in same</p>		
+	<hr><hr>
+	
+
+
+	<h2><u>The ::selection Pseudo-element</u></h2>
+	<p>The ::selection CSS pseudo-element applies styles to the part of a document that has been highlighted by the user
+	 (such as clicking and dragging the mouse across text).
+	The syntax to the :: selection of the pseudo element is </p> 
+	selector ::selection { <br>
+		property:value;<br>
+		}<br>
+	<h3><u>Example:-</u></h3>
+	<p id=three>Normaly when we select the text the text will appears into white and background color changes into blue
+	but, here we are changing background color to yellow and color of the text to red </p>		
+	<hr><hr>
+
+
+
+
+
+
+</body>
+</html>
